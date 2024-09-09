@@ -10,6 +10,7 @@ RUN \
     && \
   echo "**** install gwn ****" && \
   curl -o /tmp/gwn.tar.gz -L https://firmware.grandstream.com/GWN_Manager-1.1.28.27-Ubuntu.tar.gz && \
+  mkdir /tmp/gwn && \
   tar -xf /tmp/gwn.tar.gz -C /tmp/gwn && \
   /tmp/gwn/install && \
   apt-get clean && \
