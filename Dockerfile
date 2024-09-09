@@ -6,7 +6,7 @@ RUN \
   apt-get install -y \
     udev \
     wget \
-    xfonts-utils fontconfig wget openssh-server \
+    xfonts-utils fontconfig wget openssh-server iproute2 \
     && \
   echo "**** install gwn ****" && \
   curl -o /tmp/gwn.tar.gz -L https://firmware.grandstream.com/GWN_Manager-1.1.28.27-Ubuntu.tar.gz && \
