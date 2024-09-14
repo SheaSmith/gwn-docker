@@ -17,7 +17,8 @@ RUN \
   rm -rf \
     /tmp/*
 
+COPY entrypoint.sh /entrypoint.sh
+
 EXPOSE 8443/tcp 10014/tcp
 
-CMD [ "/gwn/gwn", "start" ]
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+ENTRYPOINT [ "/entrypoint.sh" ]
