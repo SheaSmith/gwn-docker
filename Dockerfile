@@ -19,6 +19,8 @@ RUN \
 
 COPY entrypoint.sh /entrypoint.sh
 
+RUN chmod a+x /entrypoint.sh
+
 EXPOSE 8443/tcp 10014/tcp
 
 ENTRYPOINT [ "/entrypoint.sh" ]
