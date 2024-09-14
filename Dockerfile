@@ -19,4 +19,4 @@ RUN \
 
 EXPOSE 8443/tcp 10014/tcp
 
-ENTRYPOINT [ "ls /" ]
+CMD [ "ls /" ]
